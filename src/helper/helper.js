@@ -20,29 +20,29 @@ export const INITIAL_FORM_STATE = {
 
 export const FORM_VALIDATION_SCHEMA = Yup.object().shape({
     firstName: Yup.string()
-      .required('Required'),
+      .required('Required firstName'),
     lastName: Yup.string()
-      .required('Required'),
+      .required('Required lastName'),
     email: Yup.string()
       .email('Invalid email.')
       .required('Required'),
     phone: Yup.number()
       .integer()
       .typeError('Please enter a valid phone number')
-      .required('Required'),
+      .required('Phone No Required'),
     addressLine1: Yup.string()
-      .required('Required'),
+      .required('AddressLine1 Required'),
     addressLine2: Yup.string(),
     city: Yup.string()
-      .required('Required'),
+      .required('AddressLine1 Required'),
     state: Yup.string()
-      .required('Required'),
+      .required('State Required'),
     country: Yup.string()
-      .required('Required'),
+      .required('Select country'),
     arrivealDate: Yup.date()
-      .required('Required'),
+      .required('ArrivealDate Required'),
     departureDate: Yup.date()
-      .required('Required'),
+      .required('DepartureDate Required'),
     message: Yup.string(),
     termsOfService: Yup.boolean()
       .oneOf([true], 'The terms and conditions must be accepted.')

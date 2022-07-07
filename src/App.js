@@ -50,7 +50,7 @@ function App() {
                     Your Details
                   </Typography>
                  </Grid>
-
+                 
                  <Grid item xs={6}>
                     <FormDataField name='firstName' label='FirstName'/>
                  </Grid>
@@ -101,11 +101,11 @@ function App() {
                  </Grid>
 
                  <Grid item xs={6}>
-                   <DateTimePicker  name='arrivealDate' label='ArrivealDate'/>
+                   <DateTimePicker  name='arrivealDate' label='ArrivealDate' id='arrivalDate'/>
                  </Grid>
 
                  <Grid item xs={6}>
-                   <DateTimePicker  name='departureDate' label='DepartureDate'/>
+                   <DateTimePicker  name='departureDate' label='DepartureDate' id='arrivalDate'/>
                  </Grid>
 
                  <Grid item xs={12}>
