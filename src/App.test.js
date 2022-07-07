@@ -4,7 +4,7 @@ import { render, fireEvent, wait,screen } from "@testing-library/react";
 import App from "./App";
 import userEvent from "@testing-library/user-event";
 
-
+// updated test cases
 
 it("should show validation on click",  () => {
    render(<App />);
@@ -32,18 +32,27 @@ it("should show validation on click",  () => {
 
         userEvent.clear(emailInput);
 
-        userEvent.type(emailInput, "john@gmail.com");
+        userEvent.type(emailInput, "kishor@gmail.com");
    
         const phoneNumber = screen.getByLabelText("Enter Valid phone");
         fireEvent.blur(phoneNumber);
         screen.findByText("Phone No Required");
 
-        const ArrivealDate = screen.getByLabelText("ArrivealDate");
-        fireEvent.blur(ArrivealDate);
-        screen.findByText("ArrivealDate Required");
+        
 
         const DepartureDate = screen.getByLabelText("DepartureDate");
         fireEvent.blur(DepartureDate);
         screen.findByText("DepartureDate Required");
+
+        const ArrivealDate = screen.getByLabelText("ArrivealDate");
+        fireEvent.blur(ArrivealDate);
+        screen.findByText("ArrivealDate Required");
    
 });
+
+
+
+
+
+
+
